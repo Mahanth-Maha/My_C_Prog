@@ -12,7 +12,7 @@ int main()
         printf("%d\n",n--);
         sleep(1);
     }while(n!=0);
-    printf("\nTimeUp !\n")
+    printf("\nTimeUp !\n");
     return 0;
 }
 
