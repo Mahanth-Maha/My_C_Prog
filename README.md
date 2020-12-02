@@ -22,17 +22,21 @@ be used in code.
 This Directory is a collection of Data Structure Codes in C programming. 
 
 Both 
+    
     1.Linear Data Structure 
-    ..1.Array 
-    ..1.List
-    ..1.Stack
-    ..1.Queue
-    1.Non - Linear Data Structure
-    ..1.Tree
-    ..1.Graph
-    ..1.Dictionary
-    ..1.Heaps
-    ..1.Tries
+    
+    ⋅⋅1.Array 
+    ⋅⋅2.List
+    ⋅⋅3.Stack
+    ⋅⋅4.Queue
+    
+    2.Non - Linear Data Structure
+    
+    ⋅⋅1.Tree
+    ⋅⋅2.Graph
+    ⋅⋅3.Dictionary
+    ⋅⋅4.Heaps
+    ⋅⋅5.Tries
  
 are in same Data Structure Directory with all required operations included.
 
