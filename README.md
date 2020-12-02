@@ -25,18 +25,18 @@ Both
     
     1.Linear Data Structure 
     
-    ⋅⋅1.Array 
-    ⋅⋅2.List
-    ⋅⋅3.Stack
-    ⋅⋅4.Queue
+    1.Array 
+    2.List
+    3.Stack
+    4.Queue
     
     2.Non - Linear Data Structure
     
-    ⋅⋅1.Tree
-    ⋅⋅2.Graph
-    ⋅⋅3.Dictionary
-    ⋅⋅4.Heaps
-    ⋅⋅5.Tries
+    1.Tree
+    2.Graph
+    3.Dictionary
+    4.Heaps
+    5.Tries
  
 are in same Data Structure Directory with all required operations included.
 
