@@ -8,7 +8,6 @@ struct node
      struct node *link;
 };
 struct node *root = NULL;
-
 void add_end(void)
 {
     struct node *temp;
@@ -438,4 +437,3 @@ int main()
     }
     return 0;
 }
-
