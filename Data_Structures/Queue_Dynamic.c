@@ -6,6 +6,7 @@ struct node
      int data;
      struct node *link;
 };
+
 struct node *root=NULL;
 void add_start(void)
 {
@@ -93,7 +94,7 @@ main()
 
      while(i==1)
      {
-     printf("Enter the Number :\n");
+     printf("\nDynamic Queue - Options \n");
      printf("0.Exit\n");
      printf("1.Add Data\n");
      printf("2.Delete Data\n");
