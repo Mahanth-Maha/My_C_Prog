@@ -67,8 +67,7 @@ void main(void)
 
     int gdriver = DETECT, gmode;
     clrscr();
-	
-//To Run this Program it is required to mention the Lib\minbgi.a or TurboC\BGI to make the compiler link program , so check the postion of folder and mention below
+//To Run this Program it is required to mention TurboC\BGI folder to make the compiler link program , so check the folder position and mention below.
     initgraph(&gdriver, &gmode, "c:\\TC\\BGI");
 //+++++++++++++++++++++++++++++++++++++++++ SCENES  Descriptive +++++++++++++++++++++++++++++++++++++
     //SCENE 1 : The HELICOPTER TAKEOFF
