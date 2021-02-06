@@ -3,10 +3,7 @@
 #include<conio.h>
 #include<dos.h>
 
-
-
-
-/////////////////SCREEN RESOLUTION 639->X-Axis;479->Y-Axis////////////////////
+//********************************      SCREEN  RESOLUTION     639->X-Axis;   479->Y-Axis   ******************************** 
 void main(void)
 {
     int xc,xy,i,j,ey;               //variable declaration
@@ -70,8 +67,10 @@ void main(void)
 
     int gdriver = DETECT, gmode;
     clrscr();
+	
+//To Run this Program it is required to mention the Lib\minbgi.a or TurboC\BGI to make the compiler link program , so check the postion of folder and mention below
     initgraph(&gdriver, &gmode, "c:\\TC\\BGI");
-///////////////////////+++++++++++++ SCENES +++++++++++///////////////////////
+//+++++++++++++++++++++++++++++++++++++++++ SCENES  Descriptive +++++++++++++++++++++++++++++++++++++
     //SCENE 1 : The HELICOPTER TAKEOFF
     //SCENE 2 : JUMPING OUT
     //SCENE 3 : JUMPING HERO FROM HELI
@@ -90,7 +89,7 @@ void main(void)
     //SCENE 16 : DESCRIPTION  '''NAMES''    ---MAHA---
     //SCENE 17 : DESCRIPTION  '''NAMES''  ---Team Mates---
     //SCENE 18 : THE END -  THANK YOU
-////////////////*************     THE PROGRAM    *************////////////////////
+//***************************************     THE PROGRAM    ***************************************
 
 ///////////////-------  SCENE 1 : The HELI TAKEOFF  ------------/////////////
 
@@ -286,8 +285,6 @@ void main(void)
 
     }
 
-
-
 /////////--------- SCENE 3 : JUMPING HERO FROM HELI ---------//////////////////
 
 
@@ -332,17 +329,8 @@ void main(void)
     cleardevice();
     }
 
-
     nosound();
-
-
-
-
-
-
-
-
-
+	
 ////////-------- SCENE 4 : OPENING PARACHUTE AND LANDING ------/////////////
     for(i=0;i<=200;i++)
     {
@@ -551,11 +539,6 @@ void main(void)
       delay(100);
       cleardevice();
     }
-
-
-
-
-
 
       cleardevice();
 ///////////------ SCENE 5 : GOING TOWARDS TERRORIST ----------//////////////////////////
@@ -807,7 +790,6 @@ void main(void)
       cleardevice();
     }
 
-
 ///////----- SCENE 6 : SHOOTING ENEMY1 (FIRING AND APPRAOCH) -----////////////
 
     clouds2(600,20);
@@ -821,8 +803,6 @@ void main(void)
     scene6(0);
     delay(1000);
     cleardevice();
-
-
 
     for(i=0;i<=150;i=i+5)
     {
@@ -999,16 +979,10 @@ void main(void)
      clouds2(530-i/50,-10);
      clouds2(80-i/50,70);
 
-
-
       delay(100);
       cleardevice();
 
     }
-
-
-
-
 
    for(i=0;i<=500;i=i+5)
     {
@@ -1120,10 +1094,6 @@ void main(void)
       cleardevice();
 
     }
-
-
-
-
 
    cleardevice();
 /////---------- SCENE 8 : ENTER INTO FENCE KILLING ENMEMY2 -----//////////////
@@ -1772,7 +1742,7 @@ void main(void)
        setcolor(LIGHTCYAN);
        settextstyle(7,0,5);
        setlinestyle(1,0,2);
-       outtextxy(50,150,"Þ  Y  M A H A N T H Þ");
+       outtextxy(50,150,"Ãž  Y  M A H A N T H Ãž");
        line(160,185,165,190);
        line(155,190,160,185);
        line(160,195,165,190);
@@ -1804,8 +1774,6 @@ void main(void)
        outtextxy(100,350,"A . C h e t h a n ");
        delay(3000);
        cleardevice();
-
-
 
 
 /////////////-------- SCENE 18 : THE END -  THANK YOU -------------////////////////
@@ -3051,7 +3019,7 @@ void cctv(int xc,int yc)
     // floodfill(450+xc,340+yc,15);
 
 
-    /* setfillstyle(SOLID_FILL,DARKGRAY);
+     /*setfillstyle(SOLID_FILL,DARKGRAY);
      floodfill(410+xc,210+yc,15);
      setfillstyle(SOLID_FILL,LIGHTGRAY);
      floodfill(410+xc,219+yc,15);
@@ -3061,9 +3029,7 @@ void cctv(int xc,int yc)
      floodfill(430+xc,257+yc,15);
      setfillstyle(SOLID_FILL,DARKGRAY);
      floodfill(430+xc,230+yc,15);
-
-
-		  */
+     */
 }
 //scene of cctv
 void scene7(int x)
@@ -3399,17 +3365,21 @@ void pzrbig(int xc,int yc)
 void pzrd(int xc,int yc)
 {
   setcolor(LIGHTRED);
- //rectangle(300+xc,315+yc,315+xc,325+yc);
- //rectangle(315+xc,318+yc,373+xc,322+yc);
+
+//rectangle(300+xc,315+yc,315+xc,325+yc);
+//rectangle(315+xc,318+yc,373+xc,322+yc);
 /* line(373+xc,315+yc,373+xc,325+yc);
  line(373+xc,315+yc,380+xc,315+yc);
  line(373+xc,325+yc,380+xc,325+yc);
  line(380+xc,315+yc,382+xc,310+yc);
  line(380+xc,325+yc,382+xc,330+yc);
  line(382+xc,310+yc,450+xc,310+yc);  */
+
  line(382+xc,330+yc,450+xc,330+yc);
  line(450+xc,310+yc,450+xc,330+yc);
- //rectangle(400+xc,305+yc,430+xc,310+yc);
+ 
+//rectangle(400+xc,305+yc,430+xc,310+yc);
+ 
  line(381+xc,313+yc,395+xc,313+yc);
  line(400+xc,313+yc,450+xc,313+yc);
  line(385+xc,330+yc,395+xc,313+yc);
@@ -3437,9 +3407,8 @@ void pzrd(int xc,int yc)
  circle(415+xc,360+yc,1);
  circle(440+xc,360+yc,1);
  circle(465+xc,360+yc,1);
-
-
 }
+
 //MISSION ACCOMPLISHED
 void msncmp(void)
 {
