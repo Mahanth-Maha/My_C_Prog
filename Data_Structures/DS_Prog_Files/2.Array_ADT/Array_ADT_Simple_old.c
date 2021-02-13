@@ -1,52 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void insert(int arr[] ,int loc,int sub[])
-{
-    int i,j=0;
-    for(i=len(arr)-1;i>=(loc-1);i--)
-        arr[len(sub)+i] = arr[i];
-    for(i=loc-1;i<(loc-1+len(sub));i++)
-    {
-        arr[i] = sub[j];
-        j++;
-    }
-}
 
-void del(int arr[] , int loc , int le)
-{
-    int i;
-    for(i=loc-1;i<=len(arr)-le;i++)
-    {
-        arr[i] = arr[i+le];
-    }
-    for(i=len(arr)-le;i<le;i++)
-    {
-        arr[i] = NULL ;
-    }
-}
+// BUGS
 
-void traverse(int arr[])
-{
-    int i;
-    printf("\nArray elements\n");
-    for(i=0;i<len(arr);i++)
-    {
-        printf(" %d\t",arr[i]);
-    }
-    printf("\n");
-}
+// LOTS of BUGS ! this is left here ! developed Dynamic Array ADT in same Dir ;) 
 
-int len(int arr[])
-{
-    int le=0,i=0;
-    while(arr[i] != '\0')
-    {
-        i++;
-        le++;
-    }
-    return le;
-}
+void insert(int *,int,int *);
+void del(int *, int , int );
+void traverse(int *);
+int len(int *);
 
 int main()
 {
@@ -90,3 +53,50 @@ int main()
     }
     return 0;
 } 
+
+void insert(int *arr,int loc,int *sub)
+{
+    int i,j=0;
+    for(i=len(arr)-1;i>=(loc-1);i--)
+        arr[len(sub)+i] = arr[i];
+    for(i=loc-1;i<(loc-1+len(sub));i++)
+    {
+        arr[i] = sub[j];
+        j++;
+    }
+}
+
+void del(int *arr , int loc , int le)
+{
+    int i;
+    for(i=loc-1;i<=len(arr)-le;i++)
+    {
+        arr[i] = arr[i+le];
+    }
+    for(i=len(arr)-le;i<le;i++)
+    {
+        arr[i] = NULL ;
+    }
+}
+
+void traverse(int *arr)
+{
+    int i;
+    printf("\nArray elements\n");
+    for(i=0;i<len(arr);i++)
+    {
+        printf(" %d\t",arr[i]);
+    }
+    printf("\n");
+}
+
+int len(int *arr)
+{
+    int le=0,i=0;
+    while(arr[i] != '\0')
+    {
+        i++;
+        le++;
+    }
+    return le;
+}
