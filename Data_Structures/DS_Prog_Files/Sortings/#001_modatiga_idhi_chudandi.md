@@ -1,11 +1,13 @@
+(Note : in Order to better understand this optimised please make sure you have a depth understanding in C programming and pointers in C , any doubt refer to "ANSCI C" by Dennis Ritchie)
+
 # Sorting Algorithms in C
 
-## 0
+## #0
 
 ###### *Counting Sort*
 
 ​	linear Sort of time nearly O(n+k) , where k is range - Boils down to linear Sort ~O(n) in Best Case , 
-​	but Space is of O(Range) ,if the Distance b/w nos are more i.e., like Numbers : 1,100,10000,1000000 ->for 4 numbers it may require O(999999) of Space 
+​	but Space is of O(Range) ,if the Distance b/w nos are more i.e., like Numbers : 1,100,10000,1000000 ->for 4 numbers it may require 999999C ~ O(largestNumber) of Space 
 
 ## #1
 
@@ -32,18 +34,18 @@
 ## #2
 
 ###### *Insertion Sort*
+
 ###### *Selection Sort*
+
 ###### *Bubble Sort*
 
 ###### *Shell Sort*
 
-
-
 	Third Type of Sortings which almost uses 'Brute force' method to sort arrays inplace
 	
-	Time  = O(n^2)
+	```Time = O(n^2) ```
 	
-	These can also be used when we need to sort more than one array at same time 
+	These sortings can be used when we need to sort more than one array at same time 
 
 
 ​	
