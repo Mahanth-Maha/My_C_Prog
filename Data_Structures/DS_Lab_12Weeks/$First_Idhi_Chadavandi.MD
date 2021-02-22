@@ -6,3 +6,4 @@
 
 * Pull requests for any errrors or bugs - feel free to pull requsets :) 
 
+* if you know me , feel free to correct code ! 
