@@ -43,3 +43,7 @@ are in same Data Structure Directory with all required operations included.
 ## Projects in C
 
 This Directory is a collection of Some useful Projects in C !
+
+## Computer Graphics in C
+
+Implementation of basic Drawing Techiques in Graphics - (lines,circles and ellipses)
