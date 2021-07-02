@@ -11,6 +11,7 @@ struct point {
 
 void recurse_surround_Check(struct point );
 void recurse_surround_Check2(struct point );
+void floodFill(int x,int y);
 
 main()
 {
@@ -22,11 +23,14 @@ main()
 	//recurse_surround_Check(start);
 	//check for circle - NOT WORKING
 	ellipse(100,90,0,360,20,20);
-	recurse_surround_Check2(start);
+	//recurse_surround_Check2(start);
+	floodFill(start.x,start.y);
     getch();
 	closegraph();
 	return 0;
 }
+// Tested both Recursive calls its killing it due to Stack overflow of Function Calls
+// Lesson 1 : Dont use Recurssion eventhough its simple :)
 
 void recurse_surround_Check(struct point s){
     int curr;
@@ -75,3 +79,13 @@ void recurse_surround_Check2(struct point s){
     }
 }
  
+void floodFill(int x,int y){
+	if(getpixel(x,y) == 0)
+	{
+		putpixel(x,y,12);
+		floodFill(x+1,y);
+		floodFill(x,y+1);
+		floodFill(x-1,y);
+		floodFill(x,y-1);
+	}
+}
