@@ -1,5 +1,5 @@
 /*
-program to draw a circle using Polynomial Method
+program to draw a ellipse using Polynomial Method
 */
 
 #include <stdio.h>
@@ -14,35 +14,34 @@ struct point {
 main()
 {
 	int gd=DETECT,gm;
-	int r,x,y,run = 1;
-
+	int a,b,x,y,run = 1;
+	//double
 	while(run == 1)
 	{
-		printf("\nPolynomial Circle Algorithm\n");
+		printf("\nPolynomial Ellipse Algorithm\n");
 		printf("Enter Center Point (x,y) : ");
 		scanf("%d %d",&c.x,&c.y);
 		flushall();
-		printf("Enter radius r : ");
-		scanf("%d",&r);
+		printf("Enter a : ");
+		scanf("%d",&a);
+		printf("Enter b : ");
+		scanf("%d",&b);
 		flushall();
 		initgraph(&gd,&gm,"c:\\turboc3\\BGI");//initializes the graph
 		x=0;
-		y=r;
-		while(x<=y)
+		y=b;
+		while(x<a)
 		{
 			delay(10);//for seeing the line drawing process slowly.
-			putpixel(c.x+x,c.y+y,1);	//put pixels in all octenmts
-			putpixel(c.x-x,c.y+y,2);
-			putpixel(c.x+x,c.y-y,3);
-			putpixel(c.x-x,c.y-y,4);
-			putpixel(c.x+y,c.y+x,5);
-			putpixel(c.x-y,c.y+x,6);
-			putpixel(c.x+y,c.y-x,7);
-			putpixel(c.x-y,c.y-x,8);
+			putpixel(c.x+x,c.y+y,2);
+			putpixel(c.x+x,c.y-y,4);
+			putpixel(c.x-x,c.y+y,6);
+			putpixel(c.x-x,c.y-y,8);
 			x++;
-			y = sqrt( (r*r) - (x*x) );
+			y=(int)(b*sqrt(((a*a)-(x*x*1.0))/(a*a)) + 0.5);
+			//y = b * sqrt(((double)((a*a)-(x*x*1.0)))/(double)(a*a));
 		}
-		outtextxy(250,20,"Polynomial Method Circle Algorithm "); // for printing text at desired screen location.
+		outtextxy(250,20,"Polynomial Method Ellipse Algorithm "); // for printing text at desired screen location.
 		putpixel(c.x,c.y,WHITE);
 		outtextxy(c.x+5,c.y+5,"C(x,y)");
 		getch();

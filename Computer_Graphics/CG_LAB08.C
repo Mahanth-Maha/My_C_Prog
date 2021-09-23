@@ -27,7 +27,7 @@ main()
 		scanf("%d %d",&c.x,&c.y);
 		flushall();
 		printf("Enter radius r : ");
-		scanf("%d ",&r);
+		scanf("%d",&r);
 		flushall();
 		initgraph(&gd,&gm,"c:\\turboc3\\BGI");//initializes the graph
 		//Q1 belw teta -> 0 - 45

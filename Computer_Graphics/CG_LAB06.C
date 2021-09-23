@@ -21,7 +21,7 @@ main()
 		printf("Enter Center Point (x,y) : ");
 		scanf("%d %d",&c.x,&c.y);
 		printf("Enter radius r : ");
-		scanf("%d ",&r);
+		scanf("%d",&r);
 		flushall();
 		initgraph(&gd,&gm,"c:\\turboc3\\BGI");//initializes the graph
 		p = 3 - 2*r;

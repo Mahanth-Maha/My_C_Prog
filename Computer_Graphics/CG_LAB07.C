@@ -21,7 +21,7 @@ main()
 		printf("Enter Center Point (x,y) : ");
 		scanf("%d %d",&c.x,&c.y);
 		printf("Enter radius r : ");
-		scanf("%d ",&r);
+		scanf("%d",&r);
 		//printf("Enter 1 To Continue ");
 		if(run)
 		{
