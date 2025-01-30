@@ -1,10 +1,7 @@
 # Combat Mission - Animated Video in (and only using) C Graphics
 🔗 [Watch the Project Video on YouTube](https://www.youtube.com/watch?v=dWvwoZclnEs)
 
-Or watch here :
-<div style="position: relative; width: 100%; padding-bottom: 56.25%">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/dWvwoZclnEs?si=EPlTH2cPSRtTu6dp&amp;start=43" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
+![Watch the Project Video on YouTube](https://youtu.be/dWvwoZclnEs?si=YnIC04PGYPEbZEyJ&t=43)
 
 ## 📌 Project Overview
 **Combat Mission** is a C programming-based animation that simulates a battle scenario where a special forces soldier infiltrates an enemy camp, eliminates threats, and successfully completes his mission. The entire animation is created using **only C graphics** (graphics.h) without any external game engines or AI.
